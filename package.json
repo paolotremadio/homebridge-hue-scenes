@@ -1,0 +1,35 @@
+{
+  "name": "homebridge-hue-scenes",
+  "version": "0.0.1",
+  "description": "Define scenes in a file and apply them to your Philips Hue lights",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "author": {
+    "name": "Paolo Tremadio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolotremadio/homebridge-hue-scenes.git"
+  },
+  "bugs": {
+    "url": "http://github.com/paolotremadio/homebridge-hue-scenes/issues"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "homebridge": ">=0.4.0"
+  },
+  "dependencies": {
+    "debug": "^4.0.1",
+    "node-hue-api": "^2.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js . --ext .js"
+  }
+}

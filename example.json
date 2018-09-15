@@ -1,0 +1,58 @@
+{
+  "zones": {
+    "all": [
+      {
+        "hueLightId": 2
+      },
+      {
+        "hueLightId": 5
+      },
+      {
+        "hueLightId": 8
+      },
+      {
+        "hueLightId": 9
+      },
+      {
+        "hueLightId": 10
+      },
+      {
+        "hueLightId": 46
+      }
+    ],
+    "wall": [
+      {
+        "hueLightId": 2
+      }
+    ],
+    "kitchen_window": [
+      {
+        "hueLightId": 5
+      }
+    ],
+    "dining_table": [
+      {
+        "hueLightId": 46
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "name": "Green",
+      "data": [
+        {
+          "settings": {
+            "on": true,
+            "bri": 254,
+            "hue": 34515,
+            "sat": 236
+          },
+          "applyTo": [
+            "wall",
+            "kitchen_window"
+          ]
+        }
+      ]
+    }
+  ]
+}
