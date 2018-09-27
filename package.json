@@ -1,6 +1,6 @@
 {
   "name": "homebridge-hue-scenes",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Define scenes in a file and apply them to your Philips Hue lights",
   "license": "ISC",
   "keywords": [
