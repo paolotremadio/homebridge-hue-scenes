@@ -21,6 +21,7 @@
     "homebridge": ">=0.4.0"
   },
   "dependencies": {
+    "bottleneck": "^2.13.0",
     "debug": "^4.0.1",
     "node-hue-api": "^2.4.3"
   },
