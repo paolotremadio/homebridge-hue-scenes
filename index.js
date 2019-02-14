@@ -74,7 +74,7 @@ class HueScenes {
       this.log(`Applying scene "${sceneToApply.name}"`);
 
       this
-        .applyScene(sceneToApply.data, this.zones)
+        .applyScene(sceneToApply, this.zones)
         .then(() => {
           // Turn off the switch after one second
           setTimeout(() => {
@@ -105,8 +105,8 @@ class HueScenes {
     return scenes[Math.floor(Math.random() * scenes.length)];
   }
 
-  async applyScene(sceneData, zones) {
-    await applyScene(this.hueApi, sceneData, zones, this.log);
+  async applyScene(scene, zones) {
+    await applyScene(this.hueApi, scene, zones, this.log);
     return true;
   }
 }

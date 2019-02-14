@@ -21,9 +21,9 @@
     "homebridge": ">=0.4.0"
   },
   "dependencies": {
-    "bottleneck": "^2.13.0",
-    "debug": "^4.0.1",
-    "node-hue-api": "^2.4.3"
+    "bottleneck": "2.16.2",
+    "debug": "4.0.1",
+    "node-hue-api": "2.4.4"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
