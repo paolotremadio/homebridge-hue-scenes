@@ -23,7 +23,7 @@
   "dependencies": {
     "bottleneck": "^2.17.1",
     "debug": "4.0.1",
-    "node-hue-api": "2.4.4"
+    "node-hue-api": "2.4.5"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
