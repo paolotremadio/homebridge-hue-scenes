@@ -15,8 +15,8 @@ class HueScenes {
     this.log = log;
     this.name = config.name;
 
-    const { host, username } = config.bridge || {};
-    this.hueApi = new HueApi(host, username);
+    const { host, username, port } = config.bridge || {};
+    this.hueApi = new HueApi(host, username, 10000, port || 80);
 
     this.loadScenes(config.scenesFile);
 
