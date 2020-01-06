@@ -57,7 +57,7 @@ const applySettingsToZone = async (hueApi, settings, zone, sceneName) => {
     limiter.schedule({ id: jobId }, async () => {
       debug(`[${jobId}] Running promise to set the light state`);
       try {
-        await hueApi.setLightState(hueLightId, settings);
+        await hueApi.put(`/lights/${hueLightId}/state`, settings);
         debug(`[${jobId}] Light state set`);
         return true;
       } catch (e) {

@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { HueApi } = require('node-hue-api');
+const axios = require('axios');
 const debug = require('debug')('homebridge-hue-sceness');
 
 const applyScene = require('./apply-scene');
@@ -16,7 +16,11 @@ class HueScenes {
     this.name = config.name;
 
     const { host, username, port } = config.bridge || {};
-    this.hueApi = new HueApi(host, username, 10000, port || 80);
+
+    this.hueApi = axios.create({
+      baseURL: `http://${host}:${port || 80}/api/${username}`,
+      timeout: 2000,
+    });
 
     this.loadScenes(config.scenesFile);
 
