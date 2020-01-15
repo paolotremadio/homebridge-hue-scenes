@@ -1,6 +1,6 @@
 {
   "zones": {
-    "all": [
+    "all_lights": [
       {
         "hueLightId": 2
       },
@@ -74,6 +74,19 @@
             "wall",
             "kitchen_window",
             "dining_table"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "All off",
+      "data": [
+        {
+          "settings": {
+            "on": false
+          },
+          "applyTo": [
+            "all_lights"
           ]
         }
       ]
