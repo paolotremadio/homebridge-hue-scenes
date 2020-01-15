@@ -42,6 +42,39 @@
             "wall",
             "kitchen_window"
           ]
+        },
+        {
+          "settings": {
+            "on": true,
+            "bri": 254,
+            "xy": [
+                0.2781,
+                0.4833
+            ]
+          },
+          "applyTo": [
+            "dining_table"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "All blue",
+      "data": [
+        {
+          "settings": {
+            "on": true,
+            "bri": 254,
+            "xy": [
+              0.1515,
+              0.1135
+            ]
+          },
+          "applyTo": [
+            "wall",
+            "kitchen_window",
+            "dining_table"
+          ]
         }
       ]
     }
